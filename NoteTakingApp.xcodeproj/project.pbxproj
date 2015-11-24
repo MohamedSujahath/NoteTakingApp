@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		076987311C04523A0069779B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076987301C04523A0069779B /* CFNetwork.framework */; };
+		076987331C04524A0069779B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076987321C04524A0069779B /* Security.framework */; };
+		076987351C04525B0069779B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076987341C04525B0069779B /* SystemConfiguration.framework */; };
+		076987371C0452670069779B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076987361C0452670069779B /* QuartzCore.framework */; };
+		076987391C0452860069779B /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 076987381C0452860069779B /* libc++.dylib */; };
+		0769873B1C0452910069779B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0769873A1C0452910069779B /* libz.dylib */; };
+		076987411C0458820069779B /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076987401C0458820069779B /* Dropbox.framework */; };
+		076987421C04A1180069779B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A02431C02F4ED00DBAA5E /* MasterViewController.m */; };
+		079A023E1C02F4ED00DBAA5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A023D1C02F4ED00DBAA5E /* main.m */; };
+		079A02411C02F4ED00DBAA5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A02401C02F4ED00DBAA5E /* AppDelegate.m */; };
+		079A02471C02F4ED00DBAA5E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A02461C02F4ED00DBAA5E /* DetailViewController.m */; };
+		079A024A1C02F4ED00DBAA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079A02481C02F4ED00DBAA5E /* Main.storyboard */; };
+		079A024C1C02F4ED00DBAA5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079A024B1C02F4ED00DBAA5E /* Images.xcassets */; };
+		079A024F1C02F4ED00DBAA5E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079A024D1C02F4ED00DBAA5E /* LaunchScreen.xib */; };
+		079A025B1C02F4ED00DBAA5E /* NoteTakingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A025A1C02F4ED00DBAA5E /* NoteTakingAppTests.m */; };
+		079A02691C03222C00DBAA5E /* NoteDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A02681C03222C00DBAA5E /* NoteDataObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		079A02551C02F4ED00DBAA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079A02301C02F4ED00DBAA5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 079A02371C02F4ED00DBAA5E;
+			remoteInfo = NoteTakingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		076987301C04523A0069779B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		076987321C04524A0069779B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		076987341C04525B0069779B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		076987361C0452670069779B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		076987381C0452860069779B /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		0769873A1C0452910069779B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		076987401C0458820069779B /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dropbox.framework; sourceTree = "<group>"; };
+		079A02381C02F4ED00DBAA5E /* NoteTakingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTakingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		079A023C1C02F4ED00DBAA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079A023D1C02F4ED00DBAA5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		079A023F1C02F4ED00DBAA5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		079A02401C02F4ED00DBAA5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		079A02421C02F4ED00DBAA5E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		079A02431C02F4ED00DBAA5E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		079A02451C02F4ED00DBAA5E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		079A02461C02F4ED00DBAA5E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		079A02491C02F4ED00DBAA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		079A024B1C02F4ED00DBAA5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		079A024E1C02F4ED00DBAA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		079A02541C02F4ED00DBAA5E /* NoteTakingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteTakingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		079A02591C02F4ED00DBAA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079A025A1C02F4ED00DBAA5E /* NoteTakingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteTakingAppTests.m; sourceTree = "<group>"; };
+		079A02671C03218900DBAA5E /* NoteDataObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteDataObject.h; sourceTree = "<group>"; };
+		079A02681C03222C00DBAA5E /* NoteDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDataObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		079A02351C02F4ED00DBAA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076987411C0458820069779B /* Dropbox.framework in Frameworks */,
+				0769873B1C0452910069779B /* libz.dylib in Frameworks */,
+				076987391C0452860069779B /* libc++.dylib in Frameworks */,
+				076987371C0452670069779B /* QuartzCore.framework in Frameworks */,
+				076987351C04525B0069779B /* SystemConfiguration.framework in Frameworks */,
+				076987331C04524A0069779B /* Security.framework in Frameworks */,
+				076987311C04523A0069779B /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079A02511C02F4ED00DBAA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		079A022F1C02F4ED00DBAA5E = {
+			isa = PBXGroup;
+			children = (
+				076987401C0458820069779B /* Dropbox.framework */,
+				0769873A1C0452910069779B /* libz.dylib */,
+				076987381C0452860069779B /* libc++.dylib */,
+				076987361C0452670069779B /* QuartzCore.framework */,
+				076987341C04525B0069779B /* SystemConfiguration.framework */,
+				076987321C04524A0069779B /* Security.framework */,
+				076987301C04523A0069779B /* CFNetwork.framework */,
+				079A023A1C02F4ED00DBAA5E /* NoteTakingApp */,
+				079A02571C02F4ED00DBAA5E /* NoteTakingAppTests */,
+				079A02391C02F4ED00DBAA5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		079A02391C02F4ED00DBAA5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				079A02381C02F4ED00DBAA5E /* NoteTakingApp.app */,
+				079A02541C02F4ED00DBAA5E /* NoteTakingAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		079A023A1C02F4ED00DBAA5E /* NoteTakingApp */ = {
+			isa = PBXGroup;
+			children = (
+				079A02661C03211400DBAA5E /* Model */,
+				079A02651C03210100DBAA5E /* View */,
+				079A02641C0320E700DBAA5E /* Controllers */,
+				079A023F1C02F4ED00DBAA5E /* AppDelegate.h */,
+				079A02401C02F4ED00DBAA5E /* AppDelegate.m */,
+				079A023B1C02F4ED00DBAA5E /* Supporting Files */,
+			);
+			path = NoteTakingApp;
+			sourceTree = "<group>";
+		};
+		079A023B1C02F4ED00DBAA5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				079A023C1C02F4ED00DBAA5E /* Info.plist */,
+				079A023D1C02F4ED00DBAA5E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		079A02571C02F4ED00DBAA5E /* NoteTakingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				079A025A1C02F4ED00DBAA5E /* NoteTakingAppTests.m */,
+				079A02581C02F4ED00DBAA5E /* Supporting Files */,
+			);
+			path = NoteTakingAppTests;
+			sourceTree = "<group>";
+		};
+		079A02581C02F4ED00DBAA5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				079A02591C02F4ED00DBAA5E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		079A02641C0320E700DBAA5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				079A02421C02F4ED00DBAA5E /* MasterViewController.h */,
+				079A02431C02F4ED00DBAA5E /* MasterViewController.m */,
+				079A02451C02F4ED00DBAA5E /* DetailViewController.h */,
+				079A02461C02F4ED00DBAA5E /* DetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		079A02651C03210100DBAA5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				079A02481C02F4ED00DBAA5E /* Main.storyboard */,
+				079A024B1C02F4ED00DBAA5E /* Images.xcassets */,
+				079A024D1C02F4ED00DBAA5E /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		079A02661C03211400DBAA5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				079A02671C03218900DBAA5E /* NoteDataObject.h */,
+				079A02681C03222C00DBAA5E /* NoteDataObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		079A02371C02F4ED00DBAA5E /* NoteTakingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079A025E1C02F4ED00DBAA5E /* Build configuration list for PBXNativeTarget "NoteTakingApp" */;
+			buildPhases = (
+				079A02341C02F4ED00DBAA5E /* Sources */,
+				079A02351C02F4ED00DBAA5E /* Frameworks */,
+				079A02361C02F4ED00DBAA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteTakingApp;
+			productName = NoteTakingApp;
+			productReference = 079A02381C02F4ED00DBAA5E /* NoteTakingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		079A02531C02F4ED00DBAA5E /* NoteTakingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079A02611C02F4ED00DBAA5E /* Build configuration list for PBXNativeTarget "NoteTakingAppTests" */;
+			buildPhases = (
+				079A02501C02F4ED00DBAA5E /* Sources */,
+				079A02511C02F4ED00DBAA5E /* Frameworks */,
+				079A02521C02F4ED00DBAA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079A02561C02F4ED00DBAA5E /* PBXTargetDependency */,
+			);
+			name = NoteTakingAppTests;
+			productName = NoteTakingAppTests;
+			productReference = 079A02541C02F4ED00DBAA5E /* NoteTakingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		079A02301C02F4ED00DBAA5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Mohamed Sujahath";
+				TargetAttributes = {
+					079A02371C02F4ED00DBAA5E = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					079A02531C02F4ED00DBAA5E = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 079A02371C02F4ED00DBAA5E;
+					};
+				};
+			};
+			buildConfigurationList = 079A02331C02F4ED00DBAA5E /* Build configuration list for PBXProject "NoteTakingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 079A022F1C02F4ED00DBAA5E;
+			productRefGroup = 079A02391C02F4ED00DBAA5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				079A02371C02F4ED00DBAA5E /* NoteTakingApp */,
+				079A02531C02F4ED00DBAA5E /* NoteTakingAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		079A02361C02F4ED00DBAA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079A024A1C02F4ED00DBAA5E /* Main.storyboard in Resources */,
+				079A024F1C02F4ED00DBAA5E /* LaunchScreen.xib in Resources */,
+				079A024C1C02F4ED00DBAA5E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079A02521C02F4ED00DBAA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		079A02341C02F4ED00DBAA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079A02411C02F4ED00DBAA5E /* AppDelegate.m in Sources */,
+				079A023E1C02F4ED00DBAA5E /* main.m in Sources */,
+				076987421C04A1180069779B /* MasterViewController.m in Sources */,
+				079A02691C03222C00DBAA5E /* NoteDataObject.m in Sources */,
+				079A02471C02F4ED00DBAA5E /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079A02501C02F4ED00DBAA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079A025B1C02F4ED00DBAA5E /* NoteTakingAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		079A02561C02F4ED00DBAA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 079A02371C02F4ED00DBAA5E /* NoteTakingApp */;
+			targetProxy = 079A02551C02F4ED00DBAA5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		079A02481C02F4ED00DBAA5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079A02491C02F4ED00DBAA5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		079A024D1C02F4ED00DBAA5E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079A024E1C02F4ED00DBAA5E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		079A025C1C02F4ED00DBAA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		079A025D1C02F4ED00DBAA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		079A025F1C02F4ED00DBAA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sundar/Downloads/dropbox-ios-sdk-1.3.13",
+					"/Users/sundar/Downloads/dropbox-ios-sync-sdk-3.1.2",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NoteTakingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		079A02601C02F4ED00DBAA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sundar/Downloads/dropbox-ios-sdk-1.3.13",
+					"/Users/sundar/Downloads/dropbox-ios-sync-sdk-3.1.2",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NoteTakingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		079A02621C02F4ED00DBAA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NoteTakingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteTakingApp.app/NoteTakingApp";
+			};
+			name = Debug;
+		};
+		079A02631C02F4ED00DBAA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NoteTakingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteTakingApp.app/NoteTakingApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		079A02331C02F4ED00DBAA5E /* Build configuration list for PBXProject "NoteTakingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079A025C1C02F4ED00DBAA5E /* Debug */,
+				079A025D1C02F4ED00DBAA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		079A025E1C02F4ED00DBAA5E /* Build configuration list for PBXNativeTarget "NoteTakingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079A025F1C02F4ED00DBAA5E /* Debug */,
+				079A02601C02F4ED00DBAA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		079A02611C02F4ED00DBAA5E /* Build configuration list for PBXNativeTarget "NoteTakingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079A02621C02F4ED00DBAA5E /* Debug */,
+				079A02631C02F4ED00DBAA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 079A02301C02F4ED00DBAA5E /* Project object */;
+}
